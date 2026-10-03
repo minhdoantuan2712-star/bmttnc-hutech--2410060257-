@@ -1,3 +1,7 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../ex01')))
+
 from flask import Flask, render_template, request
 from ex01.cipher.caesar import CaesarCipher
 
